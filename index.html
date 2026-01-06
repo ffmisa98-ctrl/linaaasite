@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея</title>
+
+<style>
+body{
+  margin:0;
+  background:#0b0b12;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color:#fff;
+}
+
+h1{
+  text-align:center;
+  padding:20px 10px;
+  margin:0;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:16px;
+  padding:20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:#111827;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+}
+
+.caption{
+  padding:12px;
+  text-align:center;
+  font-weight:800;
+  font-size:18px;
+  background:#0b1220;
+}
+</style>
+</head>
+<body>
+
+<h1>Моя коллекция</h1>
+
+<div class="gallery">
+
+  <div class="card">
+    <img src="bronya.png" alt="броняня">
+    <div class="caption">броняня</div>
+  </div>
+
+  <div class="card">
+    <img src="allahis.png" alt="аллахис">
+    <div class="caption">аллахис</div>
+  </div>
+
+  <div class="card">
+    <img src="paa.png" alt="паа">
+    <div class="caption">паа</div>
+  </div>
+
+  <div class="card">
+    <img src="abamba.png" alt="абамба">
+    <div class="caption">абамба</div>
+  </div>
+
+  <div class="card">
+    <img src="gargamel.png" alt="гаргамель">
+    <div class="caption">гаргамель</div>
+  </div>
+
+</div>
+
+</body>
+</html>
